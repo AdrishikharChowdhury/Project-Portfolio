@@ -24,7 +24,7 @@ Explore the live site or clone this repository to explore the code behind it.
 ---
 
 ## Live Demo
-Check out the live portfolio here: [Portfolio Website](https://your-portfolio-link.com) *(Replace with your actual hosted link)*
+Check out the live portfolio here: [Portfolio Website](https://adrishikharchowdhury.glitch.me) *(Replace with your actual hosted link)*
 
 ---
 
