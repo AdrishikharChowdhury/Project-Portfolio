@@ -7,11 +7,13 @@
     <title>Contact Me</title>
 </head>
 <body>
+    <br><br><br><br>
     <header>
         <h1><p align="center">Contact Me</p></h1>
     </header>
     <main>
-        <form align="center" action="mailto:mailto:amiadrishikhar@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Adrishikhar,%20I%20would%20like%20to%20discuss..." method="POST" enctype="text/plain">
+        <form align="center" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="bdc5a73f-76cf-4f6f-8b49-92af8e8c4878">
             <label for="name">Name: 
                 <input type="text" id="name" name="name" required size="35">
             </label>
@@ -30,7 +32,7 @@
             </label>
             <br><br>
             <label for="submit">
-                <input type="submit" value="Submit">
+                <input height="100" type="submit" value="Submit" style="width: 400px; height: 35px;">
             </label>
         </form>
     </main>
