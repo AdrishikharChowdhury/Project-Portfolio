@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/portfolio/static/css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <p>
-            <h1>My Portfolio</h1>
-            <b><big>Adrishikhar Chowdhury</big></b>
-        </p>
+        <div class="navbar">
+                <big>
+                    <div class="customhead">
+                        
+                            <div id="logo">
+
+                            </div>
+                        
+                    </div></big>
+                <div class="navhead">
+                    <a class="navlink" href="/portfolio/home.html" target="_main">Home</a>
+                    <a class="navlink" href="/portfolio/Education.html" target="_main">Education</a>
+                    <a class="navlink" href="/portfolio/Experience.html">Experiences</a>
+                    <a class="navlink" href="/portfolio/Projects.html">Projects</a>
+                    <a class="navlink" href="/portfolio/Contact Me.html">Contact Me</a> 
+                </div>
+        </div>
+        <br><br>
+        <section class="primary">
+            <span>
+                <b><big class="custom1">Adrishikhar Chowdhury</big></b>
+            </span>
+        </section>
     </header>
     <hr>
     <main>
         <div>
             <section>
-                <p><b><big>Welcome to My Portfolio</big></b></p>
+                <p><b><big class="custom1">Welcome to My Portfolio</big></b></p>
             <p>
                 Hi, I'm a passionate <i><b>Electronics and Communication Engineering</b></i> student at <b>St. Thomas College of Engineering and Technology</b>, with a strong foundation in <u>programming</u>, <u>problem-solving</u>, and <u>innovative project development</u>. This portfolio highlights my educational background, work experience, and personal projects that reflect my technical skills and dedication.
             </p>
@@ -26,7 +47,7 @@
         <hr>
         <div>
             <section>
-                <p><b><big>About Me</big></b></p>
+                <p><b><big class="custom1">About Me</big></b></p>
                 <p>
                 I am currently pursuing my <b>Bachelor of Technology</b> in <b>Electronics and Communication Engineering</b> <i>(2023-Present(Expected Graduation: 2027))</i>, where I've gained knowledge in <u>data structures</u>, <u>artificial intelligence</u>, <u>Python</u>, <u>Java</u>,<u>C</u>,<u>C++</u> and <u>OOPs</u>. My academic journey is complemented by hands-on experience in building projects and learning industry-relevant tools.
             </p>
@@ -35,7 +56,7 @@
         <hr>
         <div>
             <section>
-                    <p><b><big>What You'll Find Here</big></b></p>
+                    <p><b><big class="custom1">What You'll Find Here</big></b></p>
                     <ul>
                         <li><b><a href="/portfolio/Education.html" target="_main" style="color: blue;">Education:</a></b> Explore my academic journey, achievements, and key coursework.</li>
                         <li><b><a href="/portfolio/Experience.html" target="_main" style="color: blue;">Experiences:</a></b> Learn about my internship and personal projects that demonstrate my growth and problem-solving skills.</li>
@@ -46,9 +67,9 @@
         <hr>
         <div>
             <section>
-                    <p><b><big>Featured Project</big></b></p>
+                    <p><b><big class="custom1">Featured Project</big></b></p>
                     <p>
-                    <big><b>Pokemon Battle Simulation <i>(July 2024)</i></b></big>
+                    <big class="custom1"><b>Pokemon Battle Simulation <i>(July 2024)</i></b></big>
                     <ul>
                         <li><b>Description:</b> A simple simulation of a Pokémon battle where two players choose their Pokémon, and the winner is decided based on their stats.</li>
                         <li><b>Technologies:</b> C, Structs, Arrays, Conditional Statements</li>
@@ -60,10 +81,9 @@
         </div>
     </main>
     <hr>
-    <footer>
         <div>
             <section>
-                    <p><b><big>Contact Me</big></b></p>
+                    <p><b><big class="custom1">Contact Me</big></b></p>
                     <p>
                     Feel free to reach out to discuss my work or for collaboration opportunities. I'm always open to new projects and challenges!:
                     <br>
@@ -75,42 +95,46 @@
             </section>
         </div>
     <hr>
-    <div>
+    <div class="quote">
         <section align="center">
             <p>
-                <big>
-                    <p>
-                      <i>"Science is just the art of making what seems impossible, possible."</i>
-                      <br>
-                                                                              -<b>Senku Ishigami</b>
-                </p>
-                </big>
+                    <p> 
+                        <big>
+                        <div>
+                            <i>"Science is just the art of making what seems impossible, possible."</i>
+                            <br>
+                            -<b>Senku Ishigami</b>
+                        </div>
+                        </big>
+                    </p>
             </p>
         </section>
     </div>
-    <hr>
-    <div>
-        <section>
-            <p><big><b>Links</b></big></p>
-            <p>Here are some links where you can find me and know more about my social life</p>
-                <p>
-                    <a href="https://github.com/AdrishikharChowdhury" target="_main" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-github fa-2x"></i></a>
-                    <a href="www.linkedin.com/in/adrishikhar-chowdhury-b44035319" target="_main" style="color: blue; text-decoration: none;"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                    <a href="https://www.instagram.com/adrishikharchowdhury/" target="_main" style="color: purple; text-decoration: none;"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                    <a href="https://linktr.ee/Adrishikhar" target="_main" style="color: green; text-decoration: none;"><i class="fa-solid fa-tree fa-2x"></i></a> 
-                </p>
-        </section>
+    <br>
+    <footer>
+        <div class="foots">
+            <b><big><p class="foots">Links</p></big></b>
+            <br>
+        <p id="text" class="foots">
+            Here are some links where you can find me and know more about my social life
+        </p>
+        <div class="social">
+            <a class="link" href="https://github.com/AdrishikharChowdhury" target="_main" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-github"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/adrishikhar-chowdhury-b44035319/" target="_main" style="color: blue; text-decoration: none;"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link" href="https://www.facebook.com/adrishikhar.chowdhury?mibextid=ZbWKwL" target="_main"><i class="fa-brands fa-facebook"></i></a>
+            <a class="link" href="https://www.instagram.com/adrishikharchowdhury/" target="_main" style="color: purple; text-decoration: none;"><i class="fa-brands fa-instagram"></i></a>
+            <a class="link" href="https://linktr.ee/Adrishikhar" target="_main" style="color: green; text-decoration: none;"><i class="fa-solid fa-tree"></i></a>
+        </div> 
     </div>
-    <hr>
-    <div align="right">
-        <section>
+    <div  class="copyright">
+            <hr style="background-color: white; border: 0; width: auto; height: 1px;">
             <small>
-                <p>&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
-                <p>
+                <p  class="foots">&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
+                <br>
+                <p  class="foots">
                     Building innovative projects and empowering others through knowledge and collaboration.
                 </p>
             </small>
-        </section>
     </div>
     </footer>
 </body>

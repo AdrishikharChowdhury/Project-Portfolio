@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/portfolio/static/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 </head>
 <body>
-    <br><br><br><br>
     <header>
-        <h1><p align="center">Contact Me</p></h1>
+        <div class="navbar">
+                <big>
+                    <div class="customhead">
+                        <div id="logo3">
+
+                        </div>
+                    </div></big>
+                    <div class="navhead">
+                        <a class="navlink" href="/portfolio/index.html" target="_main">Home</a>
+                        <a class="navlink" href="/portfolio/Education.html" target="_main">Education</a>
+                        <a class="navlink" href="/portfolio/Experience.html">Experiences</a>
+                        <a class="navlink" href="/portfolio/Projects.html">Projects</a>
+                        <a class="navlink" href="/portfolio/Contact Me.html">Contact Me</a>
+                    </div>    
+        </div>
+        <br><br>
+            <big>
+                    <section class="customhead1">
+                        Fill the form
+                    </section>
+            </big>
+            <br>
     </header>
     <main>
-        <form align="center" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="bdc5a73f-76cf-4f6f-8b49-92af8e8c4878">
-            <label for="name">Name: 
-                <input type="text" id="name" name="name" required size="35">
-            </label>
-            <br><br>
-            <label for="email">Email: 
-                <input type="text" id="email" name="email" required size="35">
-            </label>
-            <br><br>
-            <label for="subject">Sub: 
-                <input type="text" id="subject" name="subject" required size="35">
-            </label>
-            <br><br>
-            <label for="Description">Description:
-                <br><br>
-                <textarea name="Description" id="Description" cols="50" rows="10" required></textarea>
-            </label>
-            <br><br>
-            <label for="submit">
-                <input height="100" type="submit" value="Submit" style="width: 400px; height: 35px;">
-            </label>
-        </form>
+            <div id="formgroup">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bdc5a73f-76cf-4f6f-8b49-92af8e8c4878">
+                    <label for="name">Name: 
+                        <input type="text" id="name" name="name" required size="35">
+                    </label>
+                    <br><br>
+                    <label for="email">Email: 
+                        <input type="text" id="email" name="email" required size="35">
+                    </label>
+                    <br><br>
+                    <label for="subject">Subject: 
+                        <input type="text" id="subject" name="subject" required size="34">
+                    </label>
+                    <br><br>
+                    <label for="Description">Description:
+                        <textarea name="Description" id="Description" required></textarea>
+                    </label>
+                    <br><br>
+                    <label for="submit">
+                        <input height="100" type="submit" class="submit" value="Submit" style="width: 100px; height: 35px;">
+                    </label>
+                </form>
+            </div>
+            <br>
+        <hr>
     </main>
     <footer>
-        <div>
-            <section>
-                <p align="center"><a href="/portfolio/index.html" target="_main" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-house fa-2x" ></i></a></p>
-            </section>
+        <div class="copyright">
+                <small>
+                    <p class="foots">&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
+                    <br>
+                    <p class="foots">
+                        Building innovative projects and empowering others through knowledge and collaboration.
+                    </p>
+                </small>
         </div>
     </footer>
 </body>
