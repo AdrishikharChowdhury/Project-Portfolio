@@ -120,6 +120,11 @@ a{
     font-size: 18px;
 }
 
+a:hover{
+    text-decoration: underline;
+    color: #230903;
+}
+
 u{
     color: #230903;
 }
@@ -224,12 +229,11 @@ p.foots{
 
 /* Logo Styling */
 #logo {
-    display: inline-block;
-    height: 120px;
-    width: 120px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
     background-image: url("https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/WhatsApp%20Image%202025-01-24%20at%2018.39.42_6e8c2752.jpg?v=1737724247860");
     background-color: white;
-    margin: 10px 16px 0 0; /* Space between logo and navigation */
     border-radius: 50%;
     border: 4px solid white;
     background-position: center;
@@ -238,18 +242,18 @@ p.foots{
 
 /* Navbar Container */
 .navbar {
+    height: 150px;
+    margin: 0;
     position: fixed;
-    top: 0;
-    left:0;
-    margin-left: -10px;
-    margin-top: -1px;
+    display: flex;
     width: 100vw;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
     background-color: rgba(15, 91, 168,0.95);
     color: white;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding-left: 20px;
+    top: 0;
+    left: 0;
 }
 
 
@@ -264,10 +268,10 @@ p.foots{
 .navhead {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 25px; /* Space between items */
-    justify-content: space-evenly;
+    gap: 50px; /* Space between items */
+    justify-content: center;
     align-items: center; /* Vertically align items */
-    font-size: 16px; /* Adjust font size for better fit */
+    font-size: 0.8rem; /* Adjust font size for better fit */
     text-align: center;
     padding: 10px 0; /* Add padding for better spacing */
 }
@@ -287,12 +291,11 @@ p.foots{
 }
 
 #logo1{
-    display: inline-block;
-    height: 120px;
-    width: 120px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
     background-image: url("https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/WhatsApp%20Image%202025-01-24%20at%2022.05.39_95f2cca9.jpg?v=1737736642243");
     background-color: white;
-    margin: 10px 20px 0 0; /* Space between logo and navigation */
     border-radius: 50%;
     border: 4px solid white;
     background-position: center;
@@ -330,12 +333,11 @@ p.foots{
 }
 
 #logo2{
-    display: inline-block;
-    height: 120px;
-    width: 120px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
     background-image: url("https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/images.jpeg?v=1737724673189");
     background-color: white;
-    margin: 10px 20px 0 0; /* Space between logo and navigation */
     border-radius: 50%;
     border: 4px solid white;
     background-position: center;
@@ -343,12 +345,11 @@ p.foots{
 }
 
 #logo3{
-    display: inline-block;
-    height: 120px;
-    width: 120px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
     background-image: url("https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/phone-call-icon-symbol-in-trendy-flat-style-call-icon-sign-for-app-logo-web-call-icon-flat-illustration-telephone-symbol-vector.jpg?v=1737724681400");
     background-color: white;
-    margin: 10px 20px 0 0; /* Space between logo and navigation */
     border-radius: 50%;
     border: 4px solid white;
     background-position: center;
@@ -356,12 +357,11 @@ p.foots{
 }
 
 #logo4{
-    display: inline-block;
-    height: 120px;
-    width: 120px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
     background-image: url("https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/WhatsApp%20Image%202025-01-24%20at%2022.43.15_eeb758de.jpg?v=1737738820635");
     background-color: white;
-    margin: 10px 20px 0 0; 
     border-radius: 50%;
     border: 4px solid white;
     background-position: center;

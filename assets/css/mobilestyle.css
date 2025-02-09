@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+    }
+
+    .navhead{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #logo, #logo1, #logo2, #logo3, #logo4{
+        height: 65px;
+        width: 65px;
+    }
+
+    .navlink{
+        font-size: 0.7rem;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    a{
+        font-size: 0.85rem;
+    }
+
+    ul{
+        font-size: 0.8rem;
+    }
+
+    .quote{
+        font-size: 0.8rem;
+    }
+
+    .contact{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .fa-brands, .fa-solid{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        font-size: 1.2rem;
+    }
+
+    .fa-regular{
+        font-size: 1.5rem;
+    }
+
+}
