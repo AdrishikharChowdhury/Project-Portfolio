@@ -1,69 +1,99 @@
-### **📝 TODO: Portfolio Website Improvements**  
+### **📌 Detailed TODO List for Portfolio Project**  
 
 ---
 
-## **1️⃣ UI & UX Enhancements 🎨**  
-🔲 **Improve Navigation Bar**  
-   - Make the navbar **sticky** so it stays visible while scrolling.  
-   - Add **dropdown menus** for future expansions.  
+## **✅ Completed Tasks**
+These features and fixes have already been implemented successfully.  
 
-🔲 **Add Smooth Animations**  
-   - Implement **CSS transitions** for interactive hover/click effects.  
-   - Improve **section transitions** for better flow.  
+### **1️⃣ Responsive Navigation (Hamburger Menu)**
+✔ Implemented a **hamburger menu** for mobile devices.  
+✔ Ensured it **toggles open and close** when clicked.  
+✔ Used **CSS media queries** to hide the full navbar on mobile.  
+✔ Fixed the issue where the menu was **not closing on re-click**.  
 
-🔲 **Enhance Contact Form**  
-   - Add **real-time validation** for input fields.  
-   - Show **success/error messages** after form submission.  
+### **2️⃣ Dark Mode Toggle**
+✔ Added a **dark mode feature** using JavaScript.  
+✔ Used `localStorage` to **remember user preference**.  
+✔ Styled dark mode to **reduce eye strain** and improve accessibility.  
 
-🔲 **Use a Consistent Color Scheme**  
-   - Define a **primary color** and apply it across the site.  
-   - Ensure **proper contrast** for light and dark modes.  
+### **3️⃣ Mobile Responsiveness & UI Fixes**
+✔ Ensured all pages **scale properly** on different screen sizes.  
+✔ Improved **spacing, font sizes, and button alignment**.  
+✔ Fixed text overflow issues on small screens.  
 
-🔲 **Improve Mobile Responsiveness**  
-   - Adjust **spacing and layout** for better mobile experience.  
-   - Test across **multiple devices and screen sizes**.  
+### **4️⃣ README.md & Documentation Updates**
+✔ Updated `README.md` to include:  
+   - Project overview, installation steps, and features.  
+   - File structure and **technology stack**.  
+   - Future improvements and **contribution guidelines**.  
+✔ Updated `TODO.md` with **detailed future tasks**.  
 
----
-
-## **2️⃣ Functional & Technical Improvements 🛠**  
-🔲 **Enhance Dark Mode**  
-   - **Save theme preference** using Local Storage.  
-   - Ensure **all elements** properly adapt in dark mode.  
-
-🔲 **Improve Project Page**  
-   - Add **live demo links** for projects.  
-   - Display **tech stack icons** for each project.  
-   - Include **GIF/image previews** of projects.  
-
-🔲 **SEO Optimization**  
-   - Add **meta descriptions** and structured data (`JSON-LD`).  
-   - Improve search visibility with **optimized keywords & alt text**.  
-
-🔲 **Optimize Loading Speed**  
-   - **Compress images and assets** to reduce load time.  
-   - Implement **lazy loading** for images.  
-   - **Minify CSS and JavaScript** files.  
+### **5️⃣ Contact Page Enhancements**
+✔ Improved the **Contact Me** page structure.  
+✔ Styled the form for **better readability** and UI.  
 
 ---
 
-## **3️⃣ Additional Features 🚀**  
-🔲 **Add a Blog Section**  
-   - Share **tech insights, coding experiences, or project stories**.  
-   - Allow comments or discussions (optional).  
+## **🛠️ Ongoing Tasks**
+These are currently in progress and require further improvements.  
 
-🔲 **Implement a Testimonials Section**  
-   - Showcase **feedback from mentors, clients, or peers**.  
-   - Use **sliders/cards** for engaging presentation.  
+### **1️⃣ Page Load Speed Optimization**
+🔄 Reduce **image sizes** using WebP format or compression.  
+🔄 Minify CSS and JavaScript files to **improve performance**.  
+🔄 Implement **lazy loading** for images to speed up initial load.  
 
-🔲 **Include a Resume Download Button**  
-   - Provide a **downloadable PDF** version of the resume.  
+### **2️⃣ Accessibility Improvements**
+🔄 Add `aria-labels` to navigation links for **screen readers**.  
+🔄 Improve **color contrast** for better readability.  
+🔄 Ensure buttons and links have **proper focus states** for keyboard users.  
 
-🔲 **Integrate Social Media Feeds**  
-   - Display **GitHub contributions** or **LinkedIn posts**.  
+### **3️⃣ Animations & Smooth Transitions**
+🔄 Add **menu slide-in animation** when opening the mobile menu.  
+🔄 Implement **hover effects** on buttons and links for better UX.  
+🔄 Use **fade-in effects** for page sections on scroll.  
 
-🔲 **Add a Visitor Counter**  
-   - Track **how many people visited** your portfolio.  
+### **4️⃣ Contact Form Functionality**
+🔄 Implement **JavaScript validation** for form fields.  
+🔄 Integrate **email sending functionality** using FormSubmit, EmailJS, or backend API.  
+🔄 Add a **confirmation message** after submission.  
 
-🔲 **Enhance Accessibility**  
-   - Ensure **proper contrast ratios** for readability.  
-   - Implement **keyboard navigation support** for better usability.  
+### **5️⃣ SEO & Meta Optimization**
+🔄 Add proper **meta tags** (`description`, `keywords`, `og:image` for social previews).  
+🔄 Implement **structured data (Schema.org)** for better search visibility.  
+🔄 Improve **page titles and alt text** for images.  
+
+---
+
+## **🚀 Future Improvements**
+These are features that will be added in future updates.  
+
+### **1️⃣ Convert Portfolio to React.js**
+🎯 Migrate the entire portfolio to **React.js** for better scalability.  
+🎯 Use **React Router** for smooth navigation without page reloads.  
+🎯 Improve **component-based design** for better maintainability.  
+
+### **2️⃣ Dark Mode Persistence**
+🎯 Save dark mode setting in `localStorage` so users don’t have to switch it manually every time.  
+
+### **3️⃣ Add a Blog Section**
+🎯 Implement a simple **blog page** where updates, articles, and projects can be shared.  
+🎯 Store blog posts in a **JSON file or a CMS (like Ghost or WordPress API)**.  
+
+### **4️⃣ Integrate a Testimonials Section**
+🎯 Add a section for **user/client feedback** and reviews.  
+🎯 Use **cards or a slider** to showcase testimonials dynamically.  
+
+### **5️⃣ Deploy the Portfolio**
+🎯 Deploy on **GitHub Pages, Netlify, or Vercel** for live preview.  
+🎯 Set up a **custom domain** for a professional touch.  
+
+---
+
+## **🔹 Additional Notes**
+📌 Keep updating `README.md` with new changes.  
+📌 Ensure **cross-browser compatibility** (Chrome, Firefox, Safari, Edge).  
+📌 Regularly test on **real mobile devices** for UI consistency.  
+
+---
+
+💡 **This is a detailed breakdown of all tasks. Let me know if you want me to add anything else!** 🚀🔥

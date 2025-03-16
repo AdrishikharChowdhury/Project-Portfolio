@@ -1,0 +1,131 @@
+.dark-mode{
+    background-color: #121212;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.dark-mode .navbar{
+    background-color: #0D1B2A;
+}
+
+.dark-mode .mobile-menu{
+    background-color: #0D1B2A;
+}
+
+.dark-mode .hamburger{
+    color: #FFB700;
+}
+
+.dark-mode #download{
+    background-color: #ffb700;
+}
+
+.dark-mode #download:hover{
+    transform: translateY(-0.5rem);
+    background-color: #ffea07;
+    transition: 0.3s ease-in-out;
+}
+
+.dark-mode #download:active{
+    transform: translateY(0.2rem);
+    transition: 0.1s ease-in-out;
+}
+
+.dark-mode .container-pic{
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+}
+
+.dark-mode .container-card{
+    background-color: #333838;
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+    border: 0.2rem solid #FFD700;
+}
+
+.dark-mode .formgroup{
+    background-color: #333838;
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+    border: 0.2rem solid #FFD700;
+    color: white;
+}
+
+.dark-mode .heading{
+    color: white;
+}
+
+.dark-mode .description{
+    color: white;
+}
+
+.dark-mode ul{
+    color: white;
+}
+
+.dark-mode a{
+    color: #FFD700;
+}
+
+.dark-mode a:hover{
+    color: #FFB700;
+    text-decoration: underline #ffb700;
+}
+
+.dark-mode .navlinks :hover{
+    color: #FFB700;
+    text-decoration: underline #ffb700;
+}
+
+.dark-mode .info{
+    background-color: #333838;
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+    border: 0.2rem solid #FFD700;
+}
+
+.dark-mode footer{
+    background-color: #0D1B2A;
+}
+
+.dark-mode .banner-img{
+    background-color: #FFD700;
+}
+
+.dark-mode .quote{
+    background-color: #333838;
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+    border: 0.2rem solid #FFD700;
+    color: white;
+}
+
+.dark-mode .banner{
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+}
+
+.dark-mode .divider{
+    background-color: white;
+}
+
+.dark-mode hr{
+    background-color: white;
+}
+
+.dark-mode textarea:focus,
+.dark-mode .submit:focus {
+    outline: none;
+    background-color: #FFD700;
+    box-shadow: 0.7rem 0.7rem 0.3rem rgba(255, 215, 0, 0.2);
+    color: #0D1B2A;
+}
+
+.dark-mode input:hover,
+.dark-mode textarea:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+
+.dark-mode .submit{
+    background-color: #FFD700;
+    color: #0D1B2A;
+}
+
+.dark-mode .submit:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}

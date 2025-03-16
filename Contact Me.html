@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/favicon.png?v=1737820814093">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mobilestyle.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./assets/css/substyle.css">
+    <link rel="stylesheet" href="./assets/css/submobilestyle.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.webp">
+    <link rel="stylesheet" href="./assets/css/dark mode.css">
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="navbar">
-                <big>
-                    <div class="customhead">
-                        <div id="logo3">
-
-                        </div>
-                    </div></big>
-                    <div class="navhead">
-                        <a class="navlink" href="/portfolio/index.html" target="_main">Home</a>
-                        <a class="navlink" href="/portfolio/Education.html" target="_main">Education</a>
-                        <a class="navlink" href="/portfolio/Experience.html">Experiences</a>
-                        <a class="navlink" href="/portfolio/Projects.html">Projects</a>
-                        <a class="navlink" href="/portfolio/Contact Me.html">Contact Me</a>
-                    </div>    
-        </div>
-        <br><br>
-            <big>
-                    <section class="customhead1">
-                        Fill the form
-                    </section>
-            </big>
-            <br>
-    </header>
-    <main>
-            <div id="formgroup">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="bdc5a73f-76cf-4f6f-8b49-92af8e8c4878">
-                    <label for="name">Name: 
-                        <input type="text" id="name" name="name" required size="35">
-                    </label>
-                    <br><br>
-                    <label for="email">Email: 
-                        <input type="text" id="email" name="email" required size="35">
-                    </label>
-                    <br><br>
-                    <label for="subject">Subject: 
-                        <input type="text" id="subject" name="subject" required size="34">
-                    </label>
-                    <br><br>
-                    <label for="Description">Description:
-                        <textarea name="Description" id="Description" required></textarea>
-                    </label>
-                    <br><br>
-                    <label for="submit">
-                        <input height="100" type="submit" class="submit" value="Submit" style="width: 100px; height: 35px;">
-                    </label>
-                </form>
+            <div class="name">
+                <a href="index.html">Adrishikhar Chowdhury</a>
             </div>
-            <br>
-        <hr>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="navlinks">
+                <div class="link"><a href="About Me.html">About Me</a></div>
+                <div class="link"><a href="Education.html">Education</a></div>
+                <div class="link"><a href="Experience.html">Experiences</a></div>
+                <div class="link"><a href="Projects.html">Projects</a></div>
+                <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="link"><a href="About Me.html">About Me</a></div>
+            <div class="link"><a href="Education.html">Education</a></div>
+            <div class="link"><a href="Experience.html">Experiences</a></div>
+            <div class="link"><a href="Projects.html">Projects</a></div>
+            <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+        </div>
+    </header>
+    <div id="pic">    
+        <div class="banner" style="height: 10rem;">
+            <div class="banner-intro">
+                <p class="t2">Fill Up the Form...</p>
+            </div>
+            <div class="buttons">
+                <button id="download">CV/Resume</button>
+                <i class="fa-solid fa-moon" id="toggle"></i>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="info-section">
+            <div class="formgroup">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="bdc5a73f-76cf-4f6f-8b49-92af8e8c4878">
+                        <label for="name">Name: 
+                            <input type="text" id="name" name="name" required size="35">
+                        </label>
+                        <br><br>
+                        <label for="email">Email: 
+                            <input type="text" id="email" name="email" required size="35">
+                        </label>
+                        <br><br>
+                        <label for="subject">Subject: 
+                            <input type="text" id="subject" name="subject" required size="34">
+                        </label>
+                        <br><br>
+                        <label for="Description">Description:
+                            <textarea name="Description" id="Description" required></textarea>
+                        </label>
+                        <br><br>
+                        <label for="submit">
+                            <input height="100" type="submit" class="submit" value="Submit">
+                        </label>
+                    </form>
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="copyright">
-                <small>
-                    <p class="foots">&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
-                    <br>
-                    <p class="foots">
-                        Building innovative projects and empowering others through knowledge and collaboration.
-                    </p>
-                </small>
+        <b><p class="footer-heading">Links</p></b>
+        <div class="footer-description">
+            Here are some links where you can find me and know more about my social life</div>
+            <div class="social">
+                <a class="link" href="https://github.com/AdrishikharChowdhury" target="_main"><i class="fa-brands fa-github"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/adrishikhar-chowdhury-b44035319/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="link" href="https://www.facebook.com/adrishikhar.chowdhury?mibextid=ZbWKwL" target="_main"><i class="fa-brands fa-facebook"></i></a>
+                <a class="link" href="https://www.instagram.com/adrishikharchowdhury/" target="_main"><i class="fa-brands fa-instagram"></i></a>
+                <a class="link" href="https://linktr.ee/Adrishikhar" target="_main"><i class="fa-solid fa-tree"></i></a>
+            </div>
+        
+        <hr>
+    <div  class="copyright">
+        <div class="copyright-heading">
+            <p>
+                &copy; 2025 Adrishikhar Chowdhury. All rights reserved.
+            </p>
         </div>
+        <div class="copyright-description">
+            <p>
+                Building innovative projects and empowering others through knowledge and collaboration.
+            </p>
+        </div>
+    </div>
     </footer>
 </body>
 </html>

@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/favicon.png?v=1737820814093">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mobilestyle.css">
-    <link rel="stylesheet" href="/portfolio/static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/substyle.css">
+    <link rel="stylesheet" href="./assets/css/submobilestyle.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.webp">
+    <link rel="stylesheet" href="./assets/css/dark mode.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <big>
-                <div class="customhead">
-                    <div id="logo4">
-
-                    </div>
-                </div></big>
-                <div class="navhead">
-                    <a class="navlink" href="index.html" target="_main">Home</a>
-                    <a class="navlink" href="Education.html" target="_main">Education</a>
-                    <a class="navlink" href="Experience.html">Experiences</a>
-                    <a class="navlink" href="Projects.html">Projects</a>
-                    <a class="navlink" href="Contact Me.html">Contact Me</a> 
-                </div>
-    </div>
-    </header>
-    <main>
-        <div class="contact">
-            <a class="navlink" href="mailto:amiadrishikhar@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Adrishikhar,%20I%20would%20like%20to%20discuss..." target="_main" style="color: white; text-decoration: none;"><i class="fa-regular fa-message"></i></a>
+            <div class="name">
+                <a href="index.html">Adrishikhar Chowdhury</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="navlinks">
+                <div class="link"><a href="About Me.html">About Me</a></div>
+                <div class="link"><a href="Education.html">Education</a></div>
+                <div class="link"><a href="Experience.html">Experiences</a></div>
+                <div class="link"><a href="Projects.html">Projects</a></div>
+                <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+            </div>
         </div>
-        <br><br>
-            <section class="primary">
-                <big><b>Welcome to My Projects Page</b></big>
-            </section>
-                <hr>
-            <section>
-                <p>
-                    Here, I've showcased a collection of personal projects that highlight my technical skills, problem-solving abilities, and passion for learning. These projects range from game development to practical tools and simulations, reflecting my journey of exploring different areas of programming and technology. Each project has been an opportunity to apply what I've learned, experiment with new ideas, and improve my skills.
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="link"><a href="About Me.html">About Me</a></div>
+            <div class="link"><a href="Education.html">Education</a></div>
+            <div class="link"><a href="Experience.html">Experiences</a></div>
+            <div class="link"><a href="Projects.html">Projects</a></div>
+            <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+        </div>
+    </header>
+    <div id="pic">    
+        <div class="banner">
+            <div class="banner-intro">
+                <p class="t1">Welcome to,</p>
+                <p class="t2">My Projects...</p>
+            </div>
+            <div class="buttons">
+                <button id="download">CV/Resume</button>
+                <i class="fa-solid fa-moon" id="toggle"></i>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="info-section">
+            <div class="info">
+                <p class="heading">
+                    Welcome to My Projects Page
                 </p>
-                <p>Feel free to explore the details below, and check out the technologies and concepts I've worked with!</p>
-            </section>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>Guess The Number Game</b></big></p>
-                    <p>
+                <p class="description">
+                    Here, I've showcased a collection of personal projects that highlight my technical skills, problem-solving abilities, and passion for learning. These projects range from game development to practical tools and simulations, reflecting my journey of exploring different areas of programming and technology. Each project has been an opportunity to apply what I've learned, experiment with new ideas, and improve my skills. <br>
+                    Feel free to explore the details below, and check out the technologies and concepts I've worked with!
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Guess The Number Game</b></p>
+                    <p class="desscription">
                     <ul>
                         <li><b>Date:</b> November 2024</li>
                         <li><b>Description:</b>
@@ -56,129 +71,211 @@
                             <li><b>Technologies Used:</b> Python</li>
                             <li><b>Key Features:</b> Random number generation, user input, conditional statements, loops</li>
                             <li><b>Key Takeaways:</b> Problem-solving, user interaction, game development fundamentals</li>
-                            <li><b>Links:</b> <a href="https://bit.ly/3WziJFD" target="_main" style="color: blue">https://bit.ly/3WziJFD</a></li>
+                            <li><b>Links:</b> <a href="https://bit.ly/3WziJFD" target="_main">https://bit.ly/3WziJFD</a></li>
                     </ul>
                     </p>
-                </section>
             </div>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>Random Password Generator</b></big></p>
-                    <ul>
-                        <li><b>Date:</b> November 2024</li>
-                        <li><b>Description:</b>
-                            Created a tool that generates secure, random passwords of a desired length, combining uppercase, lowercase, numbers, and special characters. This tool ensures enhanced password security for users.</li>
-                        <li><b>Technologies Used:</b> Python</li>
-                        <li><b>Key Features:</b> Random password generation, user input, string manipulation</li>
-                        <li><b>Key Takeaways:</b> Data security, utility tools, string operations</li>
-                        <li><b>Links:</b> <a href="https://bit.ly/40sWxhP" target="_main" style="color: blue"> https://bit.ly/40sWxhP</a></li>
-                    </ul>
-                </section>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Random Password Generator</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> November 2024</li>
+                            <li><b>Description:</b>
+                                Created a tool that generates secure, random passwords of a desired length, combining uppercase, lowercase, numbers, and special characters. This tool ensures enhanced password security for users.</li>
+                            <li><b>Technologies Used:</b> Python</li>
+                            <li><b>Key Features:</b> Random password generation, user input, string manipulation</li>
+                            <li><b>Key Takeaways:</b> Data security, utility tools, string operations</li>
+                            <li><b>Links:</b> <a href="https://bit.ly/40sWxhP" target="_main"> https://bit.ly/40sWxhP</a></li>
+                        </ul>
+                    </p>
             </div>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>Pokemon Battle Simulation</b></big></p>
-                    <ul>
-                        <li><b>Date:</b> July 2024</li>
-                        <li><b>Description:</b>
-                            Designed a simulation of a Pokémon-style battle where two players select Pokémon. The winner is determined based on predefined stats like attack, defense, and health.</li>
-                        <li><b>Technologies Used:</b> C</li>
-                        <li><b>Key Features:</b> Structs, arrays, conditional statements</li>
-                        <li><b>Key Takeaways:</b> Game logic, data structures, competitive programming</li>
-                        <li><b>Links:</b> <a href="https://bit.ly/40tNlJT" target="_main" style="color: blue"> https://bit.ly/40tNlJT</a></li>
-                    </ul>
-                </section>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Pokemon Battle Simulation</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> July 2024</li>
+                            <li><b>Description:</b>
+                                Designed a simulation of a Pokémon-style battle where two players select Pokémon. The winner is determined based on predefined stats like attack, defense, and health.</li>
+                            <li><b>Technologies Used:</b> C</li>
+                            <li><b>Key Features:</b> Structs, arrays, conditional statements</li>
+                            <li><b>Key Takeaways:</b> Game logic, data structures, competitive programming</li>
+                            <li><b>Links:</b> <a href="https://bit.ly/40tNlJT" target="_main"> https://bit.ly/40tNlJT</a></li>
+                        </ul>
+                    </p>
             </div>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>Banking System</b></big></p>
-                    <ul>
-                        <li><b>Date:</b> November 2024</li>
-                        <li><b>Description:</b>
-                            Built a simple banking system where users can create an account, deposit money, withdraw funds, and check their balance. Designed for beginner-level understanding of financial operations.</li>
-                        <li><b>Technologies Used:</b> Python</li>
-                        <li><b>Key Features:</b> Object-oriented programming, classes, methods, user input</li>
-                        <li><b>Key Takeaways:</b> OOP concepts, user interfaces, basic banking operations</li>
-                        <li><b>Links:</b> <a href="https://bit.ly/40tNo8x" target="_main" style="color: blue"> https://bit.ly/40tNo8x</a>
-                        </li>
-                    </ul>    
-                </section>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Banking System</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> November 2024</li>
+                            <li><b>Description:</b>
+                                Built a simple banking system where users can create an account, deposit money, withdraw funds, and check their balance. Designed for beginner-level understanding of financial operations.</li>
+                            <li><b>Technologies Used:</b> Python</li>
+                            <li><b>Key Features:</b> Object-oriented programming, classes, methods, user input</li>
+                            <li><b>Key Takeaways:</b> OOP concepts, user interfaces, basic banking operations</li>
+                            <li><b>Links:</b> <a href="https://bit.ly/40tNo8x" target="_main"> https://bit.ly/40tNo8x</a>
+                            </li>
+                        </ul>
+                    </p>
             </div>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>Portfolio Page</b></big></p>
-                    <ul>
-                        <li><b>Date:</b> January 2025</li>
-                        <li><b>Description:</b>
-                            Developed a personal portfolio webpage to showcase details about education, skills, and projects. Designed the page to be visually appealing and informative.</li>
-                        <li><b>Technologies Used:</b> HTML, CSS</li>
-                        <li><b>Key Features:</b> Web design, layout, content organization</li>
-                        <li><b>Key Takeaways:</b> Front-end development, personal branding, web presence</li>
-                        <li><b>Links:</b> <a href="https://bit.ly/3PV0GWE"  target="_main" style="color: blue"> https://bit.ly/3PV0GWE</a></li>
-                    </ul>
-                </section>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Portfolio Page</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> January 2025</li>
+                            <li><b>Description:</b>
+                                Developed a personal portfolio webpage to showcase details about education, skills, and projects. Designed the page to be visually appealing and informative.</li>
+                            <li><b>Technologies Used:</b> HTML, CSS</li>
+                            <li><b>Key Features:</b> Web design, layout, content organization</li>
+                            <li><b>Key Takeaways:</b> Front-end development, personal branding, web presence</li>
+                            <li><b>Links:</b> <a href="https://bit.ly/3PV0GWE"  target="_main"> https://bit.ly/3PV0GWE</a></li>
+                        </ul>
+                    </p>
             </div>
-            <hr>
-            <div>
-                <section>
-                    <p><big><b>LearnHub</b></big></p>
-                    <ul>
-                        <li><b>Date:</b> January 2025</li>
-                        <li><b>Description:</b>
-                            Developed an educational platform to provide students with access to videos, tutorials, and projects. The platform focuses on creating an engaging and user-friendly learning environment.</li>
-                        <li><b>Technologies Used:</b> HTML, CSS, JavaScript (On development not yet live)</li>
-                        <li><b>Key Features:</b> Educational content organization, responsive design, user-friendly interface</li>
-                        <li><b>Key Takeaways:</b> Front-end development, user-centric design, and web development best practices</li>
-                        <li><b>Links:</b> <a href="https://github.com/AdrishikharChowdhury/Project-LearnHub.git" target="_main" style="color: blue">View code on GitHub</a></li>
-                    </ul>
-                </section>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>LearnHub</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> January 2025</li>
+                            <li><b>Description:</b>
+                                Developed an educational platform to provide students with access to videos, tutorials, and projects. The platform focuses on creating an engaging and user-friendly learning environment.</li>
+                            <li><b>Technologies Used:</b> HTML, CSS, JavaScript (On development not yet live)</li>
+                            <li><b>Key Features:</b> Educational content organization, responsive design, user-friendly interface</li>
+                            <li><b>Key Takeaways:</b> Front-end development, user-centric design, and web development best practices</li>
+                            <li><b>Links:</b> <a href="https://github.com/AdrishikharChowdhury/Project-LearnHub.git" target="_main">View code on GitHub</a></li>
+                        </ul>
+                    </p>
             </div>
-            <div>
-                <section>
-                    <p><big><b>Amazon Clone</b></big></p>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Amazon Clone</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b>Date:</b> February 2025</li>
+                            <li><b>Description:</b>
+                                Built a fully responsive clone of the Amazon website, replicating key features such as product listings, navigation, and category pages. The project focuses on delivering an authentic user experience with modern design practices.
+                            </li>
+                            <li><b>Technologies Used:</b> HTML, CSS, Font Awesome (for icons)</li>
+                            <li><b>Key Features:</b> 
+                                Responsive design, dynamic category pages (Clothes, Electronics, Gaming, etc.), search functionality, and a user-friendly interface.
+                            </li>
+                            <li><b>Key Takeaways:</b> 
+                                Front-end web development, responsive design techniques, and effective UI/UX design for e-commerce platforms.
+                            </li>
+                            <li><b>Links:</b> 
+                                <a href="https://github.com/AdrishikharChowdhury/Amazon-clone.git" target="_main">View code on GitHub</a>
+                            </li>
+                        </ul>
+                    </p>
+            </div>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Tic Tac Toe Game</b></p>
+                <p class="description">
                     <ul>
                         <li><b>Date:</b> February 2025</li>
                         <li><b>Description:</b>
-                            Built a fully responsive clone of the Amazon website, replicating key features such as product listings, navigation, and category pages. The project focuses on delivering an authentic user experience with modern design practices.
+                            A <b>fully interactive Tic Tac Toe game</b> built using <b>HTML, CSS, and JavaScript</b>. 
+                            It supports <b>two-player mode</b> and includes a simple AI to play against the computer.
                         </li>
-                        <li><b>Technologies Used:</b> HTML, CSS, Font Awesome (for icons)</li>
+                        <li><b>Technologies Used:</b> HTML, CSS, JavaScript</li>
                         <li><b>Key Features:</b> 
-                            Responsive design, dynamic category pages (Clothes, Electronics, Gaming, etc.), search functionality, and a user-friendly interface.
+                            Supports <b>two-player mode</b>, <b>simple AI opponent</b>, <b>game restart option</b>, and <b>responsive design</b>.
                         </li>
                         <li><b>Key Takeaways:</b> 
-                            Front-end web development, responsive design techniques, and effective UI/UX design for e-commerce platforms.
+                            Improved <b>JavaScript logic</b>, learned <b>DOM manipulation</b>, and gained experience with <b>event handling</b>.
                         </li>
                         <li><b>Links:</b> 
-                            <a href="https://github.com/AdrishikharChowdhury/Amazon-clone.git" target="_main" style="color: blue">View code on GitHub</a>
+                            <a href="https://github.com/AdrishikharChowdhury/Katakuti.git" target="_main">View code on GitHub</a>
                         </li>
                     </ul>
-                </section>
-                
-            </div>          
-    </main>
-        <hr>
-        <div>
-            <section>
-                <p align="center">
-                    <big><i>"If you don't make your own path, you'll be nothing but a follower."</i></big><br>
-                            <b>-Senku Ishigami</b>
                 </p>
-            </section>
-        </div>
-        <footer>
-            <div class="copyright">
-                    <small>
-                        <p class="foots">&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
-                        <br>
-                        <p class="foots">
-                            Building innovative projects and empowering others through knowledge and collaboration.
-                        </p>
-                    </small>
             </div>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>JavaScript Calculator</b></p>
+                <p class="description">
+                    <ul>
+                        <li><b>Date:</b> February 2025</li>
+                        <li><b>Description:</b>
+                            A <b>fully functional and interactive calculator</b> that performs <b>basic arithmetic operations</b> 
+                            and includes a <b>dark mode toggle</b> for better user experience.
+                        </li>
+                        <li><b>Technologies Used:</b> HTML, CSS, JavaScript</li>
+                        <li><b>Key Features:</b> 
+                            Performs <b>addition, subtraction, multiplication, and division</b>, supports <b>dark mode</b>, and has <b>error handling</b>.
+                        </li>
+                        <li><b>Key Takeaways:</b> 
+                            Learned <b>JavaScript event handling</b>, <b>localStorage usage</b>, and <b>responsive UI design</b>.
+                        </li>
+                        <li><b>Links:</b> 
+                            <a href="https://github.com/AdrishikharChowdhury/Project-Calculator.git" target="_main">View code on GitHub</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Rock Paper Scissors</b></p>
+                <p class="description">
+                    <ul>
+                        <li><b>Date:</b> February 2025</li>
+                        <li><b>Description:</b>
+                            A <b>classic Rock Paper Scissors game</b> built using <b>JavaScript</b>, 
+                            where players can compete against a <b>computer AI</b>.
+                        </li>
+                        <li><b>Technologies Used:</b> HTML, CSS, JavaScript</li>
+                        <li><b>Key Features:</b> 
+                            Includes <b>randomized AI moves</b>, <b>score tracking</b>, <b>win/loss messages</b>, and a <b>responsive interface</b>.
+                        </li>
+                        <li><b>Key Takeaways:</b> 
+                            Improved <b>JavaScript logic</b>, learned <b>randomization in programming</b>, and enhanced <b>UI/UX skills</b>.
+                        </li>
+                        <li><b>Links:</b> 
+                            <a href="https://github.com/AdrishikharChowdhury/Stone-Paper-Scissors-Cut.git" target="_main">View code on GitHub</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="quote">
+                <p class="quoted">
+                    <i>"If you don't make your own path, you'll be nothing but a follower."</i>
+                </p>
+                    <p class="quoter"><b>-Senku Ishigami</b></p>
+            </div>
+        </div>
+    </main>
+        <footer>
+            <b><p class="footer-heading">Links</p></b>
+            <div class="footer-description">
+                Here are some links where you can find me and know more about my social life
+            </div>
+                <div class="social">
+                    <a class="link" href="https://github.com/AdrishikharChowdhury" target="_main"><i class="fa-brands fa-github"></i></a>
+                    <a class="link" href="https://www.linkedin.com/in/adrishikhar-chowdhury-b44035319/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="link" href="https://www.facebook.com/adrishikhar.chowdhury?mibextid=ZbWKwL" target="_main"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="link" href="https://www.instagram.com/adrishikharchowdhury/" target="_main"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="link" href="https://linktr.ee/Adrishikhar" target="_main"><i class="fa-solid fa-tree"></i></a>
+                </div>
+            <hr>
+        <div  class="copyright">
+            <div class="copyright-heading">
+                <p>
+                    &copy; 2025 Adrishikhar Chowdhury. All rights reserved.
+                </p>
+            </div>
+            <div class="copyright-description">
+                <p>
+                    Building innovative projects and empowering others through knowledge and collaboration.
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

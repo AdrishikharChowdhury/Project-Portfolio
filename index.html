@@ -3,138 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/60a890c3-caee-4e3f-8a61-bb90e5c70aa8/favicon.png?v=1737820814093">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mobilestyle.css">
-    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.webp">
+    <link rel="stylesheet" href="./assets/css/dark mode.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-                <big>
-                    <div class="customhead">
-                            <div id="logo"></div>
-                    </div>
-                </big>
-                <div class="navhead">
-                    <a class="navlink" href="/portfolio/index.html" target="_main">Home</a>
-                    <a class="navlink" href="/portfolio/Education.html" target="_main">Education</a>
-                    <a class="navlink" href="/portfolio/Experience.html">Experiences</a>
-                    <a class="navlink" href="/portfolio/Projects.html">Projects</a>
-                    <a class="navlink" href="/portfolio/Contact Me.html">Contact Me</a> 
-                </div>
+            <div class="name">
+                <a href="index.html">Adrishikhar Chowdhury</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="navlinks">
+                <div class="link"><a href="About Me.html">About Me</a></div>
+                <div class="link"><a href="Education.html">Education</a></div>
+                <div class="link"><a href="Experience.html">Experiences</a></div>
+                <div class="link"><a href="Projects.html">Projects</a></div>
+                <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+            </div>
         </div>
-        <br><br>
-        <section class="primary">
-            <span>
-                <b><big class="custom1">Adrishikhar Chowdhury</big></b>
-            </span>
-        </section>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="link"><a href="About Me.html">About Me</a></div>
+            <div class="link"><a href="Education.html">Education</a></div>
+            <div class="link"><a href="Experience.html">Experiences</a></div>
+            <div class="link"><a href="Projects.html">Projects</a></div>
+            <div class="link"><a href="Contact Me.html">Contact Me</a></div>
+        </div>
     </header>
-    <hr>
+    <div id="pic">    
+        <div class="banner">
+            <div class="banner-intro">
+                <p class="t1">Hi there,</p>
+                <p class="t2">I am Adrishikhar Chowdhury</p>
+                <p class="t3">I am into programming</p>
+                <div class="buttons">
+                    <button id="download">CV/Resume</button>
+                    <i class="fa-solid fa-moon" id="toggle"></i>
+                </div>
+            </div>
+            <div class="banner-img" id="slideshow"><div id="pic1"></div></div>
+        </div>
+    </div>
     <main>
-        <div>
-            <section>
-                <p><b><big class="custom1">Welcome to My Portfolio</big></b></p>
-            <p>
-                Hi, I'm a passionate <i><b>Electronics and Communication Engineering</b></i> student at <b>St. Thomas College of Engineering and Technology</b>, with a strong foundation in <u>programming</u>, <u>problem-solving</u>, and <u>innovative project development</u>. This portfolio highlights my educational background, work experience, and personal projects that reflect my technical skills and dedication.
-            </p>
-            </section>
-        </div>
-        <hr>
-        <div>
-            <section>
-                <p><b><big class="custom1">About Me</big></b></p>
-                <p>
-                I am currently pursuing my <b>Bachelor of Technology</b> in <b>Electronics and Communication Engineering</b> <i>(2023-Present(Expected Graduation: 2027))</i>, where I've gained knowledge in <u>data structures</u>, <u>artificial intelligence</u>, <u>Python</u>, <u>Java</u>,<u>C</u>,<u>C++</u> and <u>OOPs</u>. My academic journey is complemented by hands-on experience in building projects and learning industry-relevant tools.
-            </p>
-            </section>
-        </div>
-        <hr>
-        <div>
-            <section>
-                    <p><b><big class="custom1">What You'll Find Here</big></b></p>
-                    <ul>
-                        <li><b><a href="/portfolio/Education.html" target="_main" style="color: blue;">Education:</a></b> Explore my academic journey, achievements, and key coursework.</li>
-                        <li><b><a href="/portfolio/Experience.html" target="_main" style="color: blue;">Experiences:</a></b> Learn about my internship and personal projects that demonstrate my growth and problem-solving skills.</li>
-                        <li><b><a href="/portfolio/Projects.html" target="_main" style="color: blue;">Projects:</a></b> Dive into the details of my projects, including games, simulations, and tools I've developed.</li>
-                    </ul>
-            </section>
-        </div>
-        <hr>
-        <div>
-            <section>
-                    <p><b><big class="custom1">Featured Project</big></b></p>
-                    <p>
-                    <big class="custom1"><b>Pokemon Battle Simulation <i>(July 2024)</i></b></big>
-                    <ul>
-                        <li><b>Description:</b> A simple simulation of a Pokémon battle where two players choose their Pokémon, and the winner is decided based on their stats.</li>
-                        <li><b>Technologies:</b> C, Structs, Arrays, Conditional Statements</li>
-                        <li><b>Skills Gained:</b> Logical thinking, Game logic, Data structures</li>
-                    </ul>
-                    <a href="Projects.html" target="_main" style="color: blue">Read more</a>
+        <div class="container">
+            <div class="container-pic"><div id="pic2"></div></div>
+            <div class="container-card">
+                <p class="heading">Welcome to My Portfolio</p>
+                <p class="description">
+                    Hi, I'm a passionate <i><b>Electronics and Communication Engineering</b></i> student at <b>St. Thomas College of Engineering and Technology</b>, with a strong foundation in <u>programming</u>, <u>problem-solving</u>, and <u>innovative project development</u>. This portfolio highlights my educational background, work experience, and personal projects that reflect my technical skills and dedication.
                 </p>
-            </section>
+            </div>
         </div>
-    </main>
-    <hr>
-        <div>
-            <section>
-                    <p><b><big class="custom1">Contact Me</big></b></p>
-                    <p>
-                    Feel free to reach out to discuss my work or for collaboration opportunities. I'm always open to new projects and challenges!:
-                    <br>
-                    Click <a href="/portfolio/Contact Me.html" target="_main" style="color: blue;">here</a> to contact me.
-                    <p>
-                    
-                </p>
-              </p>
-            </section>
-        </div>
-    <hr>
-    <div class="quote">
-        <section align="center">
-            <p>
-                    <p> 
-                        <big>
-                        <div>
-                            <i>"Science is just the art of making what seems impossible, possible."</i>
-                            <br>
-                            -<b>Senku Ishigami</b>
-                        </div>
-                        </big>
+        <hr class="divider">
+        <div class="info-section">
+            <div class="info">
+                <p class="heading"><b>What You'll Find Here</b></p>
+                    <p class="description">
+                        <ul>
+                            <li><b><a href="Education.html" target="_main">Education:</a></b> Explore my academic journey, achievements, and key coursework.</li>
+                            <li><b><a href="Experience.html" target="_main">Experiences:</a></b> Learn about my internship and personal projects that demonstrate my growth and problem-solving skills.</li>
+                            <li><b><a href="Projects.html" target="_main">Projects:</a></b> Dive into the details of my projects, including games, simulations, and tools I've developed.</li>
+                        </ul>
                     </p>
-            </p>
-        </section>
-    </div>
-    <br>
+            </div>
+            <hr class="divider">
+            <div class="info">
+                <p class="heading"><b>Featured Project</b></p>
+                    <p class="description">
+                        <b>Pokemon Battle Simulation <i>(July 2024)</i></b>
+                        <ul>
+                            <li><b>Description:</b> A simple simulation of a Pokémon battle where two players choose their Pokémon, and the winner is decided based on their stats.</li>
+                            <li><b>Technologies:</b> C, Structs, Arrays, Conditional Statements</li>
+                            <li><b>Skills Gained:</b> Logical thinking, Game logic, Data structures</li>
+                        </ul>
+                        <a href="Projects.html" target="_main">Read more</a>
+                    </p>
+            </div>
+            <hr class="divider">
+                <div class="info">
+                    <p class="heading"><b>Contact Me</b></p>
+                        <p class="description">
+                        Feel free to reach out to discuss my work or for collaboration opportunities. I'm always open to new projects and challenges!:
+                        <br>
+                        Click <a href="/portfolio/Contact Me.html" target="_main">here</a> to contact me.
+                        <p>
+                    </p>
+                </p>
+                </div>
+            <hr class="divider">
+                <div class="quote">
+                    <p class="quoted">
+                        <i>"Science is just the art of making what seems impossible, possible."</i>
+                    </p>
+                    <p class="quoter">
+                        <b>-Senku Ishigami</b>
+                    </p>
+                </div>
+            </div>
+    </main>
     <footer>
-        <div class="foots">
-            <b><big><p class="foots">Links</p></big></b>
-            <br>
-        <p id="text" class="foots">
-            Here are some links where you can find me and know more about my social life
-        </p>
-        <div class="social">
-            <a class="link" href="https://github.com/AdrishikharChowdhury" target="_main" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-github"></i></a>
-            <a class="link" href="https://www.linkedin.com/in/adrishikhar-chowdhury-b44035319/" target="_main" style="color: blue; text-decoration: none;"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="link" href="https://www.facebook.com/adrishikhar.chowdhury?mibextid=ZbWKwL" target="_main"><i class="fa-brands fa-facebook"></i></a>
-            <a class="link" href="https://www.instagram.com/adrishikharchowdhury/" target="_main" style="color: purple; text-decoration: none;"><i class="fa-brands fa-instagram"></i></a>
-            <a class="link" href="https://linktr.ee/Adrishikhar" target="_main" style="color: green; text-decoration: none;"><i class="fa-solid fa-tree"></i></a>
-        </div> 
-    </div>
-    <div  class="copyright">
-            <hr style="background-color: white; border: 0; width: auto; height: 1px;">
-            <small>
-                <p  class="foots">&copy; 2025 Adrishikhar Chowdhury. All rights reserved.</p>
-                <br>
-                <p  class="foots">
+            <b><p class="footer-heading">Links</p></b>
+            <div class="footer-description">
+                Here are some links where you can find me and know more about my social life</div>
+                <div class="social">
+                    <a class="link" href="https://github.com/AdrishikharChowdhury" target="_main"><i class="fa-brands fa-github"></i></a>
+                    <a class="link" href="https://www.linkedin.com/in/adrishikhar-chowdhury-b44035319/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="link" href="https://www.facebook.com/adrishikhar.chowdhury?mibextid=ZbWKwL" target="_main"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="link" href="https://www.instagram.com/adrishikharchowdhury/" target="_main"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="link" href="https://linktr.ee/Adrishikhar" target="_main"><i class="fa-solid fa-tree"></i></a>
+                </div>
+            <hr class="divider">
+        <div  class="copyright">
+            <div class="copyright-heading">
+                <p>
+                    &copy; 2025 Adrishikhar Chowdhury. All rights reserved.
+                </p>
+            </div>
+            <div class="copyright-description">
+                <p>
                     Building innovative projects and empowering others through knowledge and collaboration.
                 </p>
-            </small>
-    </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

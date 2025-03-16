@@ -1,4 +1,3 @@
-
 # **Personal Portfolio**
 
 Welcome to my personal portfolio repository! This project is designed to showcase my **education**, **experiences**, and **projects**, providing a centralized platform to demonstrate my skills, achievements, and technical expertise.
@@ -12,6 +11,7 @@ Welcome to my personal portfolio repository! This project is designed to showcas
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [How to Run Locally](#how-to-run-locally)
+- [Future Improvements](#future-improvements)
 - [Contact](#contact)
 
 ---
@@ -21,6 +21,7 @@ This portfolio is a representation of my journey as a **student and aspiring pro
 - Academic milestones and achievements
 - Hands-on project experiences
 - Technical and problem-solving skills
+- Interactive UI enhancements (Dark mode, hamburger menu, animations)
 
 Explore the live site or clone this repository to explore the code behind it.
 
@@ -35,7 +36,8 @@ Check out the live portfolio here: [Portfolio Website](https://adrishikharchowdh
 - **Education Page**: Detailed academic background, key coursework, and notable achievements.
 - **Experience Page**: Highlights internships, personal projects, and skill-building efforts.
 - **Projects Page**: Showcases completed and ongoing projects with descriptions and links to GitHub repositories.
-- **Responsive Design**: Optimized for both desktop and mobile viewing. *(New: Enhanced mobile responsiveness added via `mobilestyle.css`)*
+- **Responsive Design**: Optimized for both desktop and mobile viewing. *(New: Enhanced mobile responsiveness with a hamburger menu)*
+- **Dark Mode Toggle**: Users can switch between light and dark themes.
 - **Font Awesome Integration**: Enhanced visuals with modern icons.
 
 ---
@@ -43,6 +45,7 @@ Check out the live portfolio here: [Portfolio Website](https://adrishikharchowdh
 ## **Technologies Used**
 - **HTML5**: For creating the structure of the website.
 - **CSS3**: For styling and layout.
+- **JavaScript**: For interactive elements (hamburger menu, dark mode toggle).
 - **Font Awesome**: For icons.
 - **GitHub Pages**: For deployment (optional).
 
@@ -52,11 +55,18 @@ Check out the live portfolio here: [Portfolio Website](https://adrishikharchowdh
 ```
 portfolio/
 ├── index.html         # Main landing page
+├── About Me.html      # About me section
 ├── Education.html     # Education details page
 ├── Experience.html    # Experiences and projects page
 ├── Projects.html      # Detailed projects list
-├── assets/            # Images and other assets (if applicable)
-├── mobilestyle.css    # Stylesheet for mobile responsiveness (New)
+├── Contact Me.html    # Contact page
+├── assets/            # Images and other assets
+├── css/
+│   ├── style.css      # Main stylesheet
+│   ├── mobilestyle.css # Mobile-specific styles
+│   ├── dark mode.css  # Dark mode styles
+├── js/
+│   ├── script.js      # JavaScript for interactivity
 ```
 
 ---
@@ -76,9 +86,10 @@ portfolio/
 ---
 
 ## **Future Improvements**
-- Add a contact form for easy communication.
-- Include more interactive animations and transitions.
-- Expand the project section with detailed case studies.
+- Add **smooth animations** for transitions and interactions.
+- Improve **SEO Optimization** with metadata and structured data.
+- Implement **form validation** in the contact section.
+- Enhance **project details** with more visuals and descriptions.
 
 ---
 
@@ -98,6 +109,8 @@ Feel free to reach out for collaborations or queries:
 
 ### **Recent Updates**
 ✅ **Added `mobilestyle.css` for enhanced mobile responsiveness.**  
-✅ **Updated file structure to include mobile styling.**
+✅ **Implemented hamburger menu and dark mode toggle.**
+✅ **Updated project structure and improved UI/UX.**
 
 ---
+

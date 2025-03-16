@@ -1,61 +1,251 @@
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #00B295;
+    position: fixed;
+    margin-right: 3.5rem;
+    margin-top: -2rem;
+    right: 0;
+    width: 20%;
+    border: 0.1rem solid black;
+    animation: fadeIn 1s ease-in-out;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
+    
     .navbar{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 120px;
+        gap: 10%;
+    }
+    .name{
+        font-size: 1rem;
     }
 
-    .navhead{
+    .divider{
+        width: 80%;
+    } 
+    
+    hr{
+        width: 80%;
+    }
+    
+    .hamburger {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .name{
+        margin-left: 1rem;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .banner{
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+        flex-direction: column-reverse;
+        gap: 1rem;
     }
 
-    #logo, #logo1, #logo2, #logo3, #logo4{
-        height: 65px;
-        width: 65px;
+    .banner-intro{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .navlink{
-        font-size: 0.7rem;
+    .banner-img{
+        height: 40%;
+        width: 55%;
     }
 
-    a:hover{
-        text-decoration: underline;
+    #pic1{
+        height: 90%;
+        width: 90%;
     }
 
-    p{
+    .t1{
+        font-size: 1rem;
+    }
+    
+    .t2{
+        font-size: 1.6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .t3{
+        font-size: 0.6rem;
+    }
+
+    .buttons{
+        padding-bottom: 1rem;
+        justify-content: flex-start;
+        margin-left: -3.5rem;
+    }
+
+    #download{
         font-size: 0.8rem;
+        padding: 1rem;
+        width: 6rem;
+    }
+    .container-pic{
+        display: none;
+        height: 25rem;
+        width: 25rem;
+    }
+    
+    #pic2{
+        height: 23rem;
+        width: 23rem;
+    }
+    .container{
+        flex-direction: column;
+        height: 30rem;
+        gap: 2rem;
+    }
+
+    .container-card{
+        height: 25rem;
+        width: 90%;
+        gap: 1rem;
+    }
+    
+    .heading{
+        color: #071013;
+        font-size: 1.4rem;
+    }
+    
+    .description{
+        width: 80%;
         line-height: 1.6;
+        font-size: 1rem;
     }
 
-    a{
-        font-size: 0.85rem;
+    .info, .quote{
+        width: 75%;
     }
 
-    ul{
-        font-size: 0.8rem;
+    .quoted{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .quoter{
+        font-size: 1rem;
+        font-weight: bold;
     }
 
-    .quote{
-        font-size: 0.8rem;
+    footer{
+        height: 20rem;
     }
 
-    .contact{
-        height: 3rem;
-        width: 3rem;
+    .footer-description{
+        margin-left: 2rem;
+        flex-direction: column;
+        gap: 0rem;
+        font-size: 0.9rem;
     }
 
-    .fa-brands, .fa-solid{
+    .social{
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1024px) { /* Tablets */
+
+    .banner{
         display: flex;
-        justify-content: end;
-        align-items: end;
+        flex-direction: column-reverse;
+        gap: 0.8rem;
+    }
+
+    .banner-img{
+        height: 50%;
+        width: 55%;
+    }
+
+    .navbar {
+        gap: 2rem;
+    }
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+
+    .navbar {
+        gap: 10%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navlinks {
+        display: none;
+    }
+    .buttons {
+        margin-left: 0;
+    }
+    .footer-description {
+        font-size: 0.9rem;
+    }
+
+    .banner-img{
+        height: 48%;
+        width: 35%;
+    }
+
+    .social {
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+}
+
+/* For Samsung Galaxy A14 5G (412px width) */
+@media (max-width: 412px) {
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.8rem;
+    }
+
+    .banner-img{
+        height: 40%;
+        width: 55%;
+    }
+
+    .mobile-menu {
+        width: 40%;
+    }
+    .footer-description {
+        font-size: 0.8rem;
+    }
+    .social {
         font-size: 1.2rem;
     }
-
-    .fa-regular{
-        font-size: 1.5rem;
-    }
-
 }
