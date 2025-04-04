@@ -3,6 +3,7 @@ let toggler = document.querySelector(".toggle-button");
 let pic1="./assets/images/pic1.jpg";
 let pic2="./assets/images/pic2.jpg";
 let pic3="./assets/images/pic3.jpg";
+let pic4="./assets/images/pic4.jpg";
 
 document.getElementById("download").addEventListener("click", function () {
     let pdfPath = "./assets/pdfs/Adrishikhar-Chowdhury_Resume.pdf";
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function slideshow(picture1){
     if (!picture1) return;
-    let images = [pic1,pic2,pic3];
+    let images = [pic1,pic2,pic3,pic4];
     let currentIndex = 0;
 
     function changeImage() {
