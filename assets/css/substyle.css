@@ -449,3 +449,12 @@ textarea:hover,
     color: white;
     font-weight: bold;
 }
+
+#sos{
+    color: blue;
+    cursor: pointer;
+}
+
+#sos:hover{
+    text-decoration: underline;
+}
