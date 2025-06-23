@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
     // ✅ Resume Download
     let downloadBtn = document.getElementById("download");
     if (downloadBtn) {
